@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sobrevive21" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Fondo" translatesAutoresizingMaskIntoConstraints="NO" id="R67-mK-sg7">
+                                <rect key="frame" x="0.0" y="-16" width="414" height="912"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3A7-jW-F15">
+                                <rect key="frame" x="30" y="74" width="354" height="688"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo2" translatesAutoresizingMaskIntoConstraints="NO" id="acR-kH-6F6">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="172"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tZe-hL-6FG">
+                                        <rect key="frame" x="0.0" y="172" width="354" height="172"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reverso" translatesAutoresizingMaskIntoConstraints="NO" id="AP1-ZT-gGj">
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="172"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reverso" translatesAutoresizingMaskIntoConstraints="NO" id="gMX-Ml-kF2">
+                                                <rect key="frame" x="177" y="0.0" width="177" height="172"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2sm-C7-LAt">
+                                        <rect key="frame" x="0.0" y="344" width="354" height="172"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMz-ZH-jhC">
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="172"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                <state key="normal" title="Button" image="Logo1"/>
+                                                <connections>
+                                                    <action selector="elegirIzq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dv3-z6-wVg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acH-h6-cOU">
+                                                <rect key="frame" x="177" y="0.0" width="177" height="172"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                <state key="normal" title="Button" image="Logo1"/>
+                                                <connections>
+                                                    <action selector="elegirDer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZn-Ip-NQF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2cz-9U-Yrp">
+                                        <rect key="frame" x="0.0" y="516" width="354" height="172"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mantén el valor entre 0 y 21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdY-Xv-fVa">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="86"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUa-9Z-Ah7">
+                                                <rect key="frame" x="0.0" y="86" width="354" height="86"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3A7-jW-F15" secondAttribute="trailing" constant="30" id="079-bH-Qid"/>
+                            <constraint firstItem="R67-mK-sg7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1jN-8m-uLg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3A7-jW-F15" secondAttribute="bottom" constant="100" id="1qd-81-PRv"/>
+                            <constraint firstItem="R67-mK-sg7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="F0K-U6-VOe"/>
+                            <constraint firstAttribute="trailing" secondItem="R67-mK-sg7" secondAttribute="trailing" id="JyL-b5-Fcv"/>
+                            <constraint firstItem="3A7-jW-F15" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Vfa-o9-woG"/>
+                            <constraint firstItem="R67-mK-sg7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m8O-xQ-YLk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R67-mK-sg7" secondAttribute="trailing" id="mN3-BN-YU4"/>
+                            <constraint firstItem="3A7-jW-F15" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="sOi-5N-V6z"/>
+                            <constraint firstItem="R67-mK-sg7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ud6-yT-uLc"/>
+                            <constraint firstAttribute="bottom" secondItem="R67-mK-sg7" secondAttribute="bottom" id="wfU-nx-MKb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="botonDer" destination="acH-h6-cOU" id="cqc-sw-ZeU"/>
+                        <outlet property="botonIzq" destination="EMz-ZH-jhC" id="3dr-IL-Vks"/>
+                        <outlet property="cartaDer" destination="gMX-Ml-kF2" id="iYa-F1-hyT"/>
+                        <outlet property="cartaIzq" destination="AP1-ZT-gGj" id="VZN-y9-sfJ"/>
+                        <outlet property="valorActual" destination="JUa-9Z-Ah7" id="9T2-vY-Ib8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fondo" width="568" height="468"/>
+        <image name="Logo1" width="256" height="256"/>
+        <image name="Logo2" width="256" height="256"/>
+        <image name="Reverso" width="1240" height="1240"/>
+    </resources>
+</document>
